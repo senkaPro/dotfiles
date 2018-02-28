@@ -94,4 +94,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #Symlink to the .zshrc in home directory
-ln -sf ~/.dotfiles/oh-my-zsh/zshrc ~/.zshrc
