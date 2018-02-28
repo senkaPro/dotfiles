@@ -61,11 +61,33 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  colored-man-pages
+  npm
+  extract
+  colorize
+  compleat
+  copyfile
+  cp
+  history
+  tmux
+  vundle
+  vi-mode
+  heroku
+  postgres
+  django
+  pip
+  python
+  virtualenv
+  nyan
+  lol
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+if [[ -r ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+    source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
