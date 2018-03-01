@@ -36,6 +36,7 @@ filetype plugin indent on
 "Colors
 syntax enable 	      "enable syntax highlighting
 filetype indent on    "load filetype indentation
+set background=dark   "Use colors suitable for dark background
 set tabstop=4	      "number for whitespace per TAB
 set softtabstop=4     "number of spaces when editing
 set expandtab         "tabs are spaces
@@ -52,17 +53,21 @@ set confirm 	      "ask for saving the file
 set mouse=a	          "enable mouse	
 set scrolloff=1       "The number of screen lines to keep 
                       "above and below the cursor.
-set wrap              "enable line wrapping
+set nowrap              "enable line wrapping
 set linebreak         "avoid line break at the middle of a word
 set sidescrolloff=3   "number of columns away from left and right
 set laststatus=2      "always display the status bar
+set noshowmode        "hide status down 
 set noerrorbells
-
+set ruler             "Always show cursor position
+"Set no backup or swap files everything is in git repo  
+set nobackup
+set nowb
+set noswapfile
 "Powerline settings
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
-set laststatus=2
 set showtabline=2
 set t_Co=256
 
@@ -73,4 +78,5 @@ if exists('$TMUX')
 else
     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 endif
