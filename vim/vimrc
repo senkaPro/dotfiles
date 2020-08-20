@@ -1,15 +1,17 @@
 set nocompatible
 filetype off
-set rtp+=~/.dotfiles/vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
+call vundle#begin()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "PLUGINS START HERE
 " This is the Vundle package, which can be found on GitHub.
 " For GitHub repos, you specify plugins using the
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 " 'user/repository' format
 Plugin 'gmarik/vundle'
 " We could also add repositories with a ".git" extension
-Plugin 'scrooloose/nerdtree.git'
+Plugin 'preservim/nerdtree.git'
 " To get plugins from Vim Scripts, you can reference the plugin
 " by name as it appears on the site
 Plugin 'Buffergator'
@@ -29,6 +31,7 @@ Plugin 'git.zip'
 " Now we can turn our filetype functionality back on
 " PLUGINS END HERE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call vundle#end() 
 filetype plugin indent on
 
 "ADDITIONAL VIM SETTINGS"""""""""""""""""""""""""""""""""""""""
@@ -78,5 +81,8 @@ if exists('$TMUX')
 else
     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-
 endif
+inoremap jj <esc>
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
