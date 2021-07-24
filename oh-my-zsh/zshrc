@@ -85,14 +85,13 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-if [[ -r ~/.local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-    source ~/.local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+if [[ -r ~/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+    source ~/.local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
 alias cl='clear'
 alias python='python3.8'
 alias pip='pip3'
-alias python2='python'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -111,9 +110,9 @@ alias python2='python'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-if [ -z "$TMUX" ]; then
-            tmux attach -t default || tmux new -s default
-fi
+#if [ -z "$TMUX" ]; then
+#            tmux attach -t default || tmux new -s default
+#fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -125,3 +124,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #Symlink to the .zshrc in home directory
 ln -sf ~/.dotfiles/oh-my-zsh/zshrc ~/.zshrc
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

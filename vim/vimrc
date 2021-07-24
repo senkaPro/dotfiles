@@ -33,13 +33,19 @@ Plugin 'git.zip'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call vundle#end() 
 filetype plugin indent on
-
+filetype indent on    "load filetype indentation
+filetype plugin on
 "ADDITIONAL VIM SETTINGS"""""""""""""""""""""""""""""""""""""""
 "
-"Colors
-syntax enable 	      "enable syntax highlighting
-filetype indent on    "load filetype indentation
+packadd! dracula
+"Colors"
+"syntax on
+syntax enable         "enable syntax highlighting
+colorscheme dracula
+let g:solarized_termtrans = 1
 set background=dark   "Use colors suitable for dark background
+let g:solarized_termcolors=256
+
 set tabstop=4	      "number for whitespace per TAB
 set softtabstop=4     "number of spaces when editing
 set expandtab         "tabs are spaces
@@ -86,3 +92,4 @@ inoremap jj <esc>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
