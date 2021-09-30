@@ -1,0 +1,132 @@
+{
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"jupyter.interactiveWindowMode": "perFile",
+	"jupyter.askForKernelRestart": false,
+	"editor.linkedEditing": true,
+	"files.autoGuessEncoding": true,
+	"explorer.confirmDelete": false,
+	"gitlens.advanced.messages": {
+		"suppressLineUncommittedWarning": true
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"python.pythonPath": "/usr/bin/python3",
+
+	"gitProjectManager.baseProjectsFolders": [
+		"/home/zefe/Documents/prjcts/oglasnik-mk"
+	],
+	"gitProjectManager.codePath": {
+		"windows": "C:\\Program Files (x86)\\Microsoft VS Code\\bin\\code.cmd",
+		"linux": "/usr/local/bin/code"
+	},
+	"gitProjectManager.storeRepositoriesBetweenSessions": true,
+	"githubPullRequests.remotes": ["origin", "upstream", "heroku"],
+	"git.autofetch": true,
+	"gitlens.gitCommands.skipConfirmations": [
+		"fetch:command",
+		"stash-push:command",
+		"push:command"
+	],
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"editor.renderLineHighlight": "none",
+	"editor.renderIndentGuides": false,
+	"editor.suggest.showStatusBar": true,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace','monospace, 'Droid Sans Fallback', ",
+	"editor.renderWhitespace": "none",
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+	"diffEditor.codeLens": true,
+	"editor.definitionLinkOpensInPeek": true,
+	"editor.fontSize": 15,
+	"editor.hideCursorInOverviewRuler": true,
+	"editor.hover.delay": 500,
+	"editor.mouseWheelZoom": true,
+	"editor.tabCompletion": "on",
+	"editor.cursorWidth": 1,
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"eslint.alwaysShowStatus": true,
+	"eslint.format.enable": true,
+	"eslint.lintTask.enable": true,
+	"eslint.probe": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue",
+		"markdown",
+		"react"
+	],
+	"python.autoComplete.addBrackets": true,
+	"terminal.integrated.allowMnemonics": true,
+	"terminal.integrated.altClickMovesCursor": false,
+	"terminal.integrated.fontFamily": "Fira Code",
+	"terminal.integrated.fontSize": 12,
+	"files.autoSave": "onFocusChange",
+	"files.associations": {
+		"*.html": "html",
+		"*.html.twig": "html"
+	},
+	"python.experiments.enabled": false,
+	"python.formatting.blackPath": "",
+	"python.linting.pylintEnabled": false,
+	"python.venvPath": "~/.local/share/virtualenvs",
+	"python.linting.flake8Enabled": true,
+	"python.analysis.autoSearchPaths": false,
+	"prettier.jsxSingleQuote": true,
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"explorer.confirmDragAndDrop": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"emmet.includeLanguages": {
+		"\"css\"": "\"css\"",
+		"javascript": "javascriptreact"
+	},
+	"emmet.showSuggestionsAsSnippets": true,
+	"emmet.triggerExpansionOnTab": true,
+	"html-css-class-completion.enableEmmetSupport": true,
+	"settingsSync.ignoredExtensions": ["steoates.autoimport"],
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"prettier.arrowParens": "avoid",
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<leader>", "d"],
+			"after": ["d", "d"]
+		},
+		{
+			"before": ["<C-n>"],
+			"commands": [":nohl"]
+		}
+	],
+	"vim.leader": "<space>",
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false
+	},
+	"ponicode.token": "5267e7c3-3b0f-4ad1-89cc-f5e37e36fbdc",
+	"webview.experimental.useExternalEndpoint": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true
+}

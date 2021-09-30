@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.dotfiles/vscode/workspaces"
+		},
+		{
+			"path": "../../../AI_projects"
+		}
+	],
+	"settings": {}
+}

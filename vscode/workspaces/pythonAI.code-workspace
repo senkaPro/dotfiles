@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../AI_projects"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "modifications",
+		"diffEditor.codeLens": true,
+		"auto-rename-tag.activationOnLanguage": [
+			"*"
+		],
+		"bracketPairColorizer.activeScopeCSS": [
+		
+			"borderStyle : solid",
+			"borderWidth : 1px",
+			"borderColor : {color}; opacity: 0.5"
+		]
+	}
+}
