@@ -8,7 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
-ZSH_THEME="pygmalion"
+ZSH_THEME="wedisagree"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=rand
@@ -110,9 +110,9 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-if [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
+#if [ -z "$TMUX" ]; then
+#    tmux attach -t default || tmux new -s default
+#fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

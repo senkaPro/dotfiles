@@ -26,22 +26,21 @@ Plugin 'vim-django-support'
 Plugin 'vim-python-virtualenv'
 Plugin 'ctrlp.vim'
 Plugin 'git.zip'
+Plugin 'dracula/vim', { 'name': 'dracula' }
 
 
 " Now we can turn our filetype functionality back on
 " PLUGINS END HERE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call vundle#end() 
+colorscheme dracula
 filetype plugin indent on
 filetype indent on    "load filetype indentation
 filetype plugin on
 "ADDITIONAL VIM SETTINGS"""""""""""""""""""""""""""""""""""""""
-"
-packadd! dracula
 "Colors"
 "syntax on
 syntax enable         "enable syntax highlighting
-colorscheme dracula
 let g:solarized_termtrans = 1
 set background=dark   "Use colors suitable for dark background
 let g:solarized_termcolors=256
