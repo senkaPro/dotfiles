@@ -27,10 +27,6 @@ Plugin 'vim-python-virtualenv'
 Plugin 'ctrlp.vim'
 Plugin 'git.zip'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-<<<<<<< HEAD
-
-=======
->>>>>>> 13739487000252a760dda7d5d25b0bc34f372a0e
 
 " Now we can turn our filetype functionality back on
 " PLUGINS END HERE
@@ -41,10 +37,6 @@ filetype plugin indent on
 filetype indent on    "load filetype indentation
 filetype plugin on
 "ADDITIONAL VIM SETTINGS"""""""""""""""""""""""""""""""""""""""
-<<<<<<< HEAD
-=======
-"
->>>>>>> 13739487000252a760dda7d5d25b0bc34f372a0e
 "Colors"
 "syntax on
 syntax enable         "enable syntax highlighting
