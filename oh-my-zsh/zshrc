@@ -128,3 +128,9 @@ ln -sf ~/.dotfiles/oh-my-zsh/zshrc ~/.zshrc
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ANDROID_SDK=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK/emulator:$PATH
+export PATH=$PATH:$ANDROID_SDK/platform-tools:$PATH
+
+# Fixes sdkmanager error with java versions higher than java 8
