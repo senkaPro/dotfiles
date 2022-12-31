@@ -18,6 +18,9 @@ function install {
 install awscli
 install chromium-browser
 install curl
+install wget
+install jq
+install unzip
 install git
 install nmap
 install openvpn
@@ -27,42 +30,20 @@ install zsh
 
 chsh -s /bin/zsh
 
-sudo apt install -y -y gnome-tweak-tool && gnome-tweaks && chrome-gnome-shell
+sudo add-apt-repository universe
+
+sudo apt install -y -y gnome-tweaks && chrome-gnome-shell
+
+sudo apt install $(apt search gnome-shell-extension | grep ^gnome | cut -d / -f1)
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 dotfilesDir=$(pwd)
 
-# dash-to-dock@micxgx.gmail.com
-# showappstoppanel@alireza6677.gmail.com
-# openweather-extension@jenslody.de
-# clipboard-indicator@tudmotu.com
-# caffeine@patapon.info
-# apt-update-indicator@franglais125.gmail.com
-# extensions@abteil.org
-# cpupower@mko-sl.de
-# apps-menu@gnome-shell-extensions.gcampax.github.com
-# todo.txt@bart.libert.gmail.com
-# places-menu@gnome-shell-extensions.gcampax.github.com
-# status-area-horizontal-spacing@mathematical.coffee.gmail.com
-# remove-dropdown-arrows@mpdeimos.com
-# EasyScreenCast@iacopodeenosee.gmail.com
-# transparent-top-bar@ftpix.com
-# arc-menu@linxgem33.com
-# desktop-icons@csoriano
-# ubuntu-appindicators@ubuntu.com
-# ubuntu-dock@ubuntu.com
-# auto-move-windows@gnome-shell-extensions.gcampax.github.com
-# drive-menu@gnome-shell-extensions.gcampax.github.com
-# horizontal-workspaces@gnome-shell-extensions.gcampax.github.com
-# launch-new-instance@gnome-shell-extensions.gcampax.github.com
-# native-window-placement@gnome-shell-extensions.gcampax.github.com
-# screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
-# user-theme@gnome-shell-extensions.gcampax.github.com
-# window-list@gnome-shell-extensions.gcampax.github.com
-# windowsNavigator@gnome-shell-extensions.gcampax.github.com
-# workspace-indicator@gnome-shell-extensions.gcampax.github.com
+rm -f ./install-gnome-extensions.sh 
+wget -N -q "https://raw.githubusercontent.com/cyfrost/install-gnome-extensions/master/install-gnome-extensions.sh" -O ./install-gnome-extensions.sh && chmod +x install-gnome-extensions.sh && 
 
+./install-gnome-extensions.sh --file extentions.txt
 
 function linkDotfile {
   dest="${HOME}/${1}"
@@ -92,5 +73,7 @@ linkDotfile .vimrc
 linkDotfile .tmux.conf
 linkDotfile .gitconfig
 linkDotfile .zshrc
+
+cat gnome-settings.ini | dconf load /
 
 source ~/.zshrc
