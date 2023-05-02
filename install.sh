@@ -15,14 +15,12 @@ function install {
 }
 
 # Basics
-install awscli
 install chromium-browser
 install curl
 install wget
 install jq
 install unzip
 install git
-install nmap
 install openvpn
 install tmux
 install vim
