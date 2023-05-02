@@ -36,12 +36,7 @@ sudo apt install -y -y gnome-tweaks && chrome-gnome-shell
 
 sudo apt install $(apt search gnome-shell-extension | grep ^gnome | cut -d / -f1)
 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 dotfilesDir=$(pwd)
-
-rm -f ./install-gnome-extensions.sh 
-wget -N -q "https://raw.githubusercontent.com/cyfrost/install-gnome-extensions/master/install-gnome-extensions.sh" -O ./install-gnome-extensions.sh && chmod +x install-gnome-extensions.sh && 
 
 ./install-gnome-extensions.sh --file extentions.txt
 
