@@ -18,7 +18,7 @@ https://extensions.gnome.org/extension/1465/desktop-icons/
 https://extensions.gnome.org/extension/1301/ubuntu-appindicators/
 https://extensions.gnome.org/extension/1300/ubuntu-dock/
 https://extensions.gnome.org/extension/16/auto-move-windows/
-https://extensions.gnome.org/extension/7/removable-drive-menu/
+https://extensions.gnome.org/extension/7/removable-drive-menu/  
 https://extensions.gnome.org/extension/2141/horizontal-workspaces/
 https://extensions.gnome.org/extension/600/launch-new-instance/
 https://extensions.gnome.org/extension/18/native-window-placement/
